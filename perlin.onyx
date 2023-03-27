@@ -1,5 +1,7 @@
 package perlin
 
+use core
+
 noise :: (x, y, z: f64) -> f64 {
     X := (cast(i32) core.math.floor(x)) & 255;
     Y := (cast(i32) core.math.floor(y)) & 255;
